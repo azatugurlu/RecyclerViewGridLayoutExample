@@ -42,7 +42,7 @@ public class CardRecyclerViewAdapter extends RecyclerView.Adapter<CardViewHolder
         if (cardList != null && position < cardList.size()) {
             Entry entry = cardList.get(position);
             holder.cardTitle.setText(entry.getTitle());
-            imageRequester.setImageFromUrl(holder.cardImage, entry.getMultimedia().get(0).getUrl());
+            imageRequester.setImageFromUrl(holder.cardImage, entry.getMultimedia().get(1).getUrl());
         }
     }
 
